@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------------container-section------------------------ */
+
+.container-section{
+    margin-right: 8%;
+    margin-left: 8%;
+    /* background-color: blue; */
+}
+
+/* -----------------------hero-section------------------------ */
+
+.hero-name{
+    color: blue;
+    font-weight: 800;
+}
+
+.hero-button button{
+    color: blue;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 3px solid blue;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.hero-button button:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* ------------------------lists-tool----------------------- */
+
+.left-section-lists h2{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.left-section-lists p{
+    color: gray;
+}
+
+.email-section input{
+    width: 380px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 2px solid gray;
+    font-size: 20px;
+}
+
+.email-btn{
+    color: white;
+    background-color: rgb(41, 77, 255);
+    border-radius: 50px;
+    padding: 15px 40px;
+    border: 3px solid rgb(41, 77, 255);
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.email-btn:hover{
+    background-color: black;
+    border: 3px solid black;
+}
+
+/* ---------------------featured-service-------------------------- */
+.featured-service{
+    margin-top: 200px;
+}
+
+.featured-service-header{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.card{
+    height: max-content;
+    align-items: center;
+}
+
+.card img{
+    width: 250px;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* padding: 50px; */
+    /* background-color: red; */
+}
+
+.first-card{
+    background-color: rgb(42, 117, 255);
+}
+
+.second-card{
+    margin-top: 100px;
+    margin-left: 50px;
+    background-color: rgb(255, 228, 228);
+}
+
+.third-card{
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: rgb(134, 255, 134);
+}
+
+.card-text-head1{
+    color: white;
+    font-size: 35px;
+    /* margin: 0 40px; */
+    /* width: 100px; */
+    /* background-color: red; */
+    font-weight: bold;
+}
+
+.card-text-head{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.card-text1{
+    color: white;
+    font-weight: bold;
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+/* ------------- task-management -------------------- */
+.task-management{
+    margin-top: 200px;
+}
+
+.task-content{
+    width: 540px;
+    height: auto;
+    margin-left: 50px;
+    /* background-color: brown; */
+}
+
+.task-head{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.task-text{
+    color: rgb(181, 156, 156);
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.btn-task{
+    width: 250px;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+/* --------------- team-workflow -------------------- */
+.team-workflow{
+    margin-top: 200px;
+}
+
+.workflow-content{
+    width: 480px;
+    margin-right: 50px;
+}
+
+.workfolw-content-head{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+
+.workfolw-content-text{
+    color: rgb(181, 156, 156);
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.appStore{
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+} 
+
+.playStore{
+    width: 80px;
+    height: 50px;
+}
+
+/* ----------------- our service -------------------- */
+.our-service{
+    margin-top: 200px;
+    /* width: 100%; */
+}
+
+.our-service-head-text{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.our-service-content{
+    /* width: 100%; */
+    height: 600px;
+    /* background-color: cadetblue; */
+}
+
+.our-service-left-img{
+    align-self: flex-start;
+}
+
+.our-sevice-count{
+    align-self: center;
+    font-size: 150px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.our-service-right-img{
+    align-self: flex-end;
+}
+
+/* ------------ bottom section ---------------- */
+.bottom-section{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    /* background-color: brown; */
+    /* width: 100%; */
+}
+
+.bottom-text-head{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bottom-text{
+    font-size: 25px;
+    margin-bottom: 100px;
+}

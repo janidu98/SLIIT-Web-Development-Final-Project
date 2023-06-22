@@ -1,0 +1,80 @@
+﻿@page
+@model StudentManager.Pages.Students.EditModel
+@{
+}
+
+<br />
+<h2>New Student</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Student ID</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="id" value="@Model.studentInfo.id" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Student Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="studentname" value="@Model.studentInfo.studentName" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">City</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="city" value="@Model.studentInfo.city" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Course</label>
+        <div class="col-sm-6">
+            <select name="courseid" class="w-100 py-2">
+                
+                @foreach (var course in Model.listCourses)
+                {
+                    <option value="@course.id" selected=@(Int32.Parse(course.id) == @Int32.Parse(Model.studentInfo.courseId) ? true : false)>@course.courseName</option>
+                }
+                
+            </select>
+            
+        </div>
+    </div>
+
+    <!-- <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Course ID</label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control" name="courseid" value="@Model.studentInfo.courseId" />
+        </div>
+    </div> -->
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mg-3">
+            <div class="col-sm-6">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <button class="btn btn-outline-primary" href="/" role="button">Cancel</button>
+        </div>
+    </div>
+
+</form>

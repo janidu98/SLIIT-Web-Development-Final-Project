@@ -1,0 +1,28 @@
+Q1) SELECT * FROM students;
+
+1	Kasun Gamage	Kandy	2
+2	Daniel Sam	Jaffna	3
+3	Hansi Silva	Colombo	1
+4	Ranidu Herath	Matara	1
+5	Praneeth Wijesinghe	Kandy	4
+
+
+
+Q2) SELECT studentId,name,city FROM students WHERE city='Kandy';
+
+1	Kasun Gamage	Kandy
+5	Praneeth Wijesinghe	Kandy
+
+
+
+Q3) UPDATE students SET city = 'Galle' WHERE studentId = 4;
+
+
+
+Q4) SELECT students.studentId,students.name,students.city,courses.name FROM students JOIN courses ON students.courseId = courses.courseId;
+
+1	Kasun Gamage	Kandy	Graphic Design
+2	Daniel Sam	Jaffna	Mobile App Development
+3	Hansi Silva	Colombo	Web Development
+4	Ranidu Herath	Galle	Web Development
+5	Praneeth Wijesinghe	Kandy	Java

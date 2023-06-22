@@ -1,0 +1,36 @@
+﻿@page
+@model StudentManager.Pages.Students.IndexModel
+@{
+}
+
+<br />
+<h2>List of Students</h2>
+<a class="btn btn-primary btn-sm" href="/Students/Create">New Student</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>City</th>
+            <th>Course Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var student in Model.listStudents)
+        {
+            <tr>
+                <td>@student.id</td>
+                <td>@student.studentName</td>
+                <td>@student.city</td>
+                <td>@student.courseName</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Students/Edit?id=@student.id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Students/Delete?id=@student.id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
